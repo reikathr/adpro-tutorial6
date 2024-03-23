@@ -1,0 +1,2 @@
+<h3>Commit 1 Reflection</h3>
+The handle_connection method takes in the parameter which is the mutable reference to TcpStream and then wraps it in a BufReader. Then, the next lines of the code read the lines from BufReader and collect it into the Vec<> called http_request until it hits the end of an HTTP request header, indicated by an empty line. Then, it will print the HTTP request.

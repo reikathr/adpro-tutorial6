@@ -53,4 +53,5 @@ to this:
 
 which is much better as it is less repetitive.
 
-
+<h3>Commit 4 Reflection</h3>
+In this commit, we simulate a slow response by adding another case where the program will take some time to load if it receives the request GET / sleep. The slow response happens because due to the program being single-threaded, it can only process one request at a time, so requests basically enter a queue and have to wait for one request to be finished being processed before it can get its turn. This simulation shows how bad being single-threaded can be for the program if multiple users try to access it at the same time.
